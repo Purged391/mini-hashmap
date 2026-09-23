@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "args": ["${input:mainCase}"]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "mainCase",
+            "type": "pickString",
+            "description": "Select the test scenario to run",
+            "options": [
+                "basic",
+                "resize",
+                "equal-keys",
+                "remove-chain",
+                "negative-hash",
+                "empty-null"
+            ],
+            "default": "basic"
+        }
+    ]
+}
